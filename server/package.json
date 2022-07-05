@@ -9,8 +9,8 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "install-client": "npm --prefix ./client install",
-    "build-client": "npm --prefix ./client run build",
+    "install-client": "cd client && npm install",
+    "build-client": "cd client && npm run build",
     "heroku-postbuild" : "npm run install-client && npm run build-client"
 
   },
