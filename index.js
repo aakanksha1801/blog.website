@@ -2,14 +2,16 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import bodyParser from 'body-parser';
-
+import cors from 'cors'
 //components
 import Connection from './database/db.js';
 import router from './routes/route.js';
 
 
 dotenv.config();
-
+app.use(cors({
+    origin: '*'
+  }));
 const app = express();
 
 app.use(cors());
