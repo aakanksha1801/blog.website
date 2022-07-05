@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node index.js",
     "install-client": "npm --prefix ./client install",
-    "build-client": "npm --prefix client run build",
+    "build-client": "npm --prefix ./client run build",
     "heroku-postbuild" : "npm run install-client && npm run build-client"
 
   },
