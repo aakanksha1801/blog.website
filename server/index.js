@@ -5,7 +5,7 @@ import bodyParser from 'body-parser';
 
 //components
 import Connection from './database/db.js';
-import router from './routes/Route.js';
+import router from './routes/route.js';
 
 
 dotenv.config();
