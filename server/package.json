@@ -10,8 +10,7 @@
   "scripts": {
     "start": "node index.js",
     "install-client": "cd client && npm install",
-    "build-client": "cd client && npm run build",
-    "heroku-postbuild" : "npm run install-client && npm run build-client"
+    "heroku-postbuild" : "npm run install-client"
 
   },
   "author": "Aakanksha",
